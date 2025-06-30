@@ -17,18 +17,50 @@ header {
     margin: 2em;
 }
 
-.images {
+.image {
     width: 20em;
     height: 15em;
     transition: calc(.75s);
 }
 
-.images:hover {
+.image:hover {
     transform: scale(1.1);
     box-shadow: 5px 5px 5px #000;
     transition: calc(.75s);
 }
 
 .container {
-    margin: 0 2em
+    display: flex;
+    flex-direction: row;
+    margin: 0 2em;
+    gap: .5em;
+}
+
+.close-icon {
+    width: 3em;
+    height: 3em;
+    margin-bottom: 1em;
+}
+
+.image-selected {
+    width: 80%;
+    height: 85%;
+    margin: 0 auto;
+}
+
+.close {
+    display: flex;
+    justify-content: end;
+    padding-right: 1em;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 100;
+    display: none;
 }

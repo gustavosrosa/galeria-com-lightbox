@@ -12,10 +12,18 @@
         <h1>Galeria</h1>
     </header>
     <section class="container">
-        <img class="images" src="./assets/img/bird.jpg" alt="Pássaro com fundo de deserto">
-        <img class="images" src="./assets/img/castle.jpg" alt="Castelo medieval">
-        <img class="images" src="./assets/img/desert.jpg" alt="Deserto com tempo limpo">
-        <img class="images" src="./assets/img/nature-with-olders.jpg" alt="Idosos andando com um fundo natural">
+            <img class="image ref" data-src="./assets/img/bird.jpg" src="./assets/img/bird.jpg" alt="Pássaro com fundo de deserto">
+            <img class="image ref" data-src="./assets/img/castle.jpg" src="./assets/img/castle.jpg" alt="Castelo medieval">
+            <img class="image ref" data-src="./assets/img/desert.jpg" src="./assets/img/desert.jpg" alt="Deserto com tempo limpo">
+            <img class="image ref" data-src="./assets/img/nature-with-olders.jpg" src="./assets/img/nature-with-olders.jpg" alt="Idosos andando com um fundo natural">
+    </section>
+    <section class="lightbox">
+        <div class="close">
+            <a href="#" class="lightbox-close" >
+                <img class="close-icon" src="./assets/img/icon-close.png" data-src="close" alt="Ícone de fechamento">
+            </a>
+        </div>
+        <img class="image-selected" src=""></img>
     </section>
 </body>
 </html>
